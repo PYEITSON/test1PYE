@@ -1,0 +1,694 @@
+---
+title: "Estadística Descriptiva"
+author: "Mayra Demoss"
+date: "`r Sys.Date()`"
+output:
+  html_notebook:
+    toc: yes
+    toc_float: yes
+    highlight: zenburn
+    theme: cerulean
+  pdf_document:
+    toc: yes
+  html_document:
+    toc: yes
+    toc_float: yes
+    highlight: zenburn    theme: cerulean
+    df_print: paged
+  word_document:
+    toc: yes
+---
+
+::: {style="text-align: right"}
+<font style="font-size:14pt">
+
+[**Material de apoyo**](http://rpubs.com/MayraDemoss/934088)
+:::
+
+## -----------------------------------------------------------------------------------
+
+# Actividad 1.1 Encuadre del curso
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right"}
+<font style="font-size:14pt">
+
+**Duración:** una sesión
+
+1
+:::
+
+<font style="font-size:18pt">
+
+**Objetivo:**
+
+<font style="font-size:16pt">
+
+<div class=text-justify>
+
+> *Presentar el encuadre del curso utilizando tecnología para que los alumnos conozca la plataforma que se utilizará para compartir documentos, las reglas de la clase y criterios de evaluación.*
+>
+> **Concepto:** estadística
+
+<br>
+
+<font style="font-size:14pt">
+
+1.  **Orden de la clase:**
+
+    a\) Presentación del curso (programa del curso, ponderaciones y criterios de evaluación por unidad.
+
+    b\) Presentación de la plataforma y software.
+
+    c\) Reglas del curso.
+
+    d\) Presentación por parte de los estudiantes. <br><br>
+
+2.  **Discutir de manera grupal lo siguiente:**
+
+    a\) ¿Qué es la Estadística?
+
+    b\) ¿Qué utilidad piensas que tiene la estadística en tu formación profesional? Mencionar ejemplos.
+
+<font style="font-size:12pt">
+
+::: {style="text-align: right"}
+Sugerencia para el desarrollo de la actividad:[Mentimeter](https://www.menti.com/etic198y59)<br><br>
+:::
+
+</font>
+
+3.  ***Asignación 1.1.***
+
+    a\) Qué estudia la Estadística?
+
+    b\) Preguntar a un maestro de carrera, ¿Cuál es la utilidad de la probabilidad y la estadística en tu carrera? Qué herramientas utiliza actualmente?
+
+    c\) [**Formato de entrega.**](https://docs.google.com/document/d/1booywpThrcA0zLKwdeXnmNhWO1vzREZo/edit?usp=sharing&ouid=118265252925699634054&rtpof=true&sd=true)
+
+## -----------------------------------------------------------------------------------
+
+# Actividad 1.2. Descripción de los datos.
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right"}
+<font style="font-size:14pt">
+
+**Duración:** una sesión
+
+2
+:::
+
+<font style="font-size:18pt">
+
+**Objetivo:**
+
+<font style="font-size:16pt">
+
+<div class=text-justify>
+
+> *Describir un conjunto de datos utilizando los conocimientos previos del alumno con la finalidad de reflexionar acerca de los procedimientos aplicados.*
+>
+> **Conceptos:** tipos de variables, medidas de localización.
+
+<br>
+
+<font style="font-size:14pt">
+
+<div class=text-justify>
+
+1.  **Revisión de la *Asignación 1.1.*** <br><br>
+
+2.  **Responde lo que se solicita a continuación.** <br>
+
+    a\) ¿Cómo se puede describir un objeto o una persona?
+
+    b\) Describir al compañero más cercano y tu casa. <br><br>
+
+3.  **Realiza una descripción de los datos con la información que se presenta a continuación:** <br>
+
+    a\) La corrosión del acero de refuerzo en un serio problema en las estructuras de concreto en ambientes afectados por condiciones climáticas severas. Por ello los investigadores han analizado el uso de barras de refuerzo fabricadas de un material compuesto. Se realizó un estudio para desarrollar directrices para adherir barras de refuerzo reforzadas con fibra de vidrio al concreto. A continuación se presentan los datos correspondientes a una muestra de 30 mediciones de la fuerza adhesiva.<br><br>
+
+    11.5, 12.1, 25.5, 7.8, 6.2, 5.7, 5.4, 5.1, 4.9, 10.7, 3.6, 3.4,13.8,20.6,12.6 5.2, 5.5, 5.1, 5.2, 4.8, 7.1, 5.2, 3.5, 3.8, 4.5, 4.9, 15.5,16.2, 18.3,11.5
+
+    <br>
+
+    b)Discutir de manera grupal las descripciones realizadas. <br><br>
+
+4.  ***Asignación 1.2.***
+
+    a\) Realizar un cuadro cronológico de la lectura *"Orígenes de la Estadística"* que se encuentra en el material [**"Estadística Descriptiva"**](http://rpubs.com/MayraDemoss/934088) p.2. [**Formato de entrega.**](https://docs.google.com/document/d/1rYh8rN0rgzDZqSlM9Ilz2B7aKWFCch4j/edit?usp=sharing&ouid=118265252925699634054&rtpof=true&sd=true)<br>
+
+    b\) Investiga cuales son las medidas de localización y los tipos de distribución de los datos. [**Formato de entrega**](https://docs.google.com/document/d/11ALtRsIXJ2YDgvNQ-4uaVVEZ3gCJ7GWd/edit?usp=sharing&ouid=118265252925699634054&rtpof=true&sd=true)
+
+## -----------------------------------------------------------------------------------
+
+# Actividad 1.3. Descripción de los datos utilizando medidas de localización.
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right"}
+<font style="font-size:14pt">
+
+**Duración:** una sesión
+
+3
+:::
+
+<font style="font-size:18pt">
+
+**Objetivo:**
+
+<font style="font-size:16pt">
+
+<div class=text-justify>
+
+> *Describir un conjunto de datos utilizando las medidas de localización con la finalidad de tener una idea de la posible distribución de los datos.*
+>
+> **Conceptos:** tipos de variables, medidas de localización, rango, datos.
+
+<br>
+
+<font style="font-size:14pt">
+
+<div class=text-justify>
+
+1.  **Realizar una descripción de los datos que se presentan a continuación:**<br>
+
+    El conjunto de datos adjuntos consiste en observaciones de resistencia al esfuerzo cortante (lb) de soldaduras de puntos ultrasónicos aplicados en un cierto tipo de lámina alclad.<br>
+
+    5434, 4948, 4521, 4570, 4990, 5702, 5241,5112, 5015, 4659, 4806, 4637, 5670, 4381, 4820, 5043, 4886, 4599, 5288, 5299, 4848, 5378, 5260, 5055, 5828, 5218, 4859, 4780, 5027, 5008, 4609, 4772, 5133, 5095, 4618, 4848, 5089, 5518, 5333, 5164, 5342, 5069, 4755, 4925, 5001, 5621, 4918, 4974, 4592, 5207, 5173, 4568, 5245, 4723, 5555, 5388, 5049, 4493, 5309, 5640, 5069, 4803, 4951, 4740, 5138, 4786, 4173, 5296, 5653, 5078, 5248, 5275, 5419, 5498, 4681, 5582, 4308, 5227, 5188, 5764, 5679, 5256, 4500, 5461, 4931, 4965, 5170, 4900, 4968, 5205, 4452, 5364, 5076, 4774, 4823, 4417, 5273, 5042, 5189, 4986 <br><br>
+
+    a\) Introducción al uso del software.<br><br>
+
+    <font style="font-size:12pt">
+
+    **Sugerencia:** [**"Notebook Estadística Descriptiva"**](https://colab.research.google.com/drive/1Cd0QLRda-NizoqV4ilkqimaKKX1XqtG0?usp=sharing)**.**
+
+    **Instrucciones para trabajar desde la notebook:**
+
+    -   Crear una copia siguiendo la ruta \< Archivo - Guardar una copia en drive>
+
+    -   Una vez creada la copia se trabajará siempre con ella, por lo cual se debe guardar en un espacio de fácil acceso para no tener inconvenientes a la hora de utilizarla.<br><br>
+
+    </font>
+
+    <center>
+
+    ![](https://github.com/MayraDemoss1/Estadistica/blob/main/copia.png?raw=true){width="250"}
+
+    </center>
+
+    <br>
+
+    b\) Hacer los calculos para realizar la descripción (calcular mínimo, máximo, media, mediana, moda y rango).<br>
+
+    c\) Con la información anterior realizar un bosquejo de la posible distribución de los datos.<br><br>
+
+2.  ***Asignación 1.3.***
+
+    Investigar los siguiente:
+
+    -   Características de un histograma.
+
+    -   Pasos para su construcción.
+
+    -   Ventajas y desventajas.
+
+    -   Realizar un ejemplo resuelto a mano.
+
+    -   [**Formato de entrega**](https://docs.google.com/document/d/1i8Qvlvio2lyqnrGh8kr08cDD9UicGYCr/edit?usp=sharing&ouid=118265252925699634054&rtpof=true&sd=true)
+
+## -----------------------------------------------------------------------------------
+
+# Actividad 1.4. Descripción de los datos utilizando un gráfico.
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right"}
+<font style="font-size:14pt">
+
+**Duración:** Una sesión
+
+4
+:::
+
+<font style="font-size:18pt">
+
+**Objetivo:**
+
+<font style="font-size:16pt">
+
+<div class=text-justify>
+
+> *Describir un conjunto de datos utilizando un gráfico con la finalidad de tener una idea de la posible distribución de los datos.*
+>
+> **Conceptos:** tipos de variables, medidas de localización, rango, datos, histograma.
+
+<br>
+
+<font style="font-size:14pt">
+
+<div class=text-justify>
+
+1.  **Revisión de la *Asignación 1.3.***
+
+    a)Realizar una descripción de la gráfica realizada*.*
+
+    b)Discutir de forma grupal sobre las características, pasos para su elaboración, ventajas y desventajas del histograma. <br><br>
+
+2.  **Elaborar un ejemplo en clase con el uso de software y explicar una manera de describir la gráfica.**
+
+    Datos sobre fuerza adhesiva:
+
+    11.5, 12.1, 25.5, 7.8, 6.2, 5.7, 5.4, 5.1, 4.9, 10.7, 3.6, 3.4, 13.8, 20.6, 12.6, 5.2, 5.5, 5.1, 5.2, 4.8, 7.1, 5.2, 3.5, 3.8, 4.5, 4.9, 15.5, 16.2, 18.3, 11.5
+
+    <br>
+
+3.  ***Asignación 1.4.***
+
+    Investigar cuales son las medidas de dispersión y como se calculan.
+
+    [**Formato de entrega.**](https://docs.google.com/document/d/1HamxvPTEBDPH2KG96pRkjkGVAkp2iyVL/edit?usp=sharing&ouid=118265252925699634054&rtpof=true&sd=true)
+
+## -----------------------------------------------------------------------------------
+
+# Actividad 1.5. Descripción de los datos utilizando un gráfico.
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right"}
+<font style="font-size:14pt">
+
+**Duración:** Una sesión
+
+5
+:::
+
+<font style="font-size:18pt">
+
+**Objetivo:**
+
+<font style="font-size:16pt">
+
+<div class=text-justify>
+
+> *Describir un conjunto de datos utilizando un gráfico con la finalidad de tener una idea de la posible distribución de los datos y obtener información porcentual.*
+>
+> **Conceptos:** tipos de variables, medidas de localización, rango, datos, histograma, porcentaje.
+
+<br>
+
+<font style="font-size:14pt">
+
+<div class=text-justify>
+
+1.  **A continuación se presenta un histograma de el conjunto de datos adjuntos consiste en observaciones de resistencia al esfuerzo cortante (lb) de soldaduras de puntos ultrasónicas aplicadas en un cierto tipo de lámina alclad.** <br>
+
+```{r}
+Resistencia <- c(5434, 4948, 4521, 4570, 4990, 5702, 5241,5112, 5015, 4659, 4806, 4637, 5670, 4381, 4820, 5043, 4886, 4599, 5288, 5299, 4848, 5378, 5260, 5055, 5828, 5218, 4859, 4780, 5027, 5008, 4609, 4772, 5133, 5095, 4618, 4848, 5089, 5518, 5333, 5164, 5342, 5069, 4755, 4925, 5001, 5621, 4918, 4974, 4592, 5207, 5173, 4568, 5245, 4723, 5555, 5388, 5049, 4493, 5309, 5640, 5069, 4803, 4951, 4740, 5138, 4786, 4173, 5296, 5653, 5078, 5248, 5275, 5419, 5498, 4681, 5582, 4308, 5227, 5188, 5764, 5679, 5256, 4500, 5461, 4931, 4965, 5170, 4900, 4968, 5205, 4452, 5364, 5076, 4774, 4823, 4417, 5273, 5042, 5189, 4986)
+
+hist(Resistencia, col = c("royalblue"),ylim = c(0,25),labels=T)
+
+```
+
+<br><br>
+
+2.  **Responde lo que se pide a continuación:** <br>
+
+    a\) Describir el histograma.<br>
+
+    b\) Debatir sobre las descripciones de los estudiantes.<br>
+
+    c\) Qué porcentaje de observaciones tienen una medida mayor que 5400 lb.?<br>
+
+    d\) Qué porcentaje de observaciones tienen una medida menor o igual 4600 lb.?<br>
+
+    e\) Qué porcentaje de observaciones son mayores que 4800 y menores o iguales que 5600 lb.?<br><br>
+
+3.  ***Asignación 1.5.***<br>
+
+    Investigar lo siguiente:
+
+    -   Carácteristicas del diagrama de caja y bigotes (Boxplot).
+
+    -   Pasos para su construcción.
+
+    -   Ventajas y desventajas.
+
+    -   Realizar un ejemplo resuelto a mano.
+
+    -   [**Formato de entrega.**](https://docs.google.com/document/d/1uUC1UfsFmXgZpUAlrfADebFIOTo_vskT/edit?usp=sharing&ouid=118265252925699634054&rtpof=true&sd=true)
+
+## -----------------------------------------------------------------------------------
+
+# Actividad 1.6. Descripción de los datos utilizando un gráfico.
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right"}
+<font style="font-size:14pt">
+
+**Duración:** Una sesión
+
+6
+:::
+
+<font style="font-size:18pt">
+
+**Objetivo:**
+
+<font style="font-size:16pt">
+
+<div class=text-justify>
+
+> *Describir un conjunto de datos utilizando un gráfico con la finalidad de tener una idea de la posible distribución de los datos y su variabilidad.*
+>
+> **Conceptos:** boxplot, datos atípicos, variación, cuartil.
+
+<br>
+
+<font style="font-size:14pt">
+
+<div class=text-justify>
+
+1.  **Revisar la *Asignación 1.5.***<br>
+
+    a\) Describir el diagrama de caja y bigotes.<br>
+
+    b\) Debatir de manera grupal sobre las descripciones de los estudiantes.<br><br>
+
+2.  **Construir un diagrama de caja y bigotes utlizando software con los datos siguientes:**<br>
+
+    Existe una creciente preocupación en los Estados Unidos debido a que no se gradúan suficientes estudiantes de la universidad. Los Estados Unidos solía ser el número 1 en el mundo en porcentaje de adultos con títulos universitarios, pero recientemente ha descendido al lugar 16. Aquí se presentan datos del procentaje de personas de entre 25 y 34 años de edad en cada estado que tenían algún tipo de grado de educación suerior, a partir de 2010 (se enumeran en orden alfabético, se incluyen el distrito de Columbia): <br>
+
+    31.5, 32.9, 33.0, 28.6, 37.9, 43.3, 45.9, 37.2, 68.8, 36.0, 35.5, 40.5, 37.2, 45.3, 36.1, 45.5, 42.3, 33.3, 30.3, 37.2, 45.5, 54.3, 37.2, 49.8, 32.1, 39.3, 40.3, 44.2, 28.4, 46.0, 47.2, 28.7, 49.6, 37.6, 50.8, 38.0, 30.8, 37.6, 43.9, 42.5, 35.2, 42.2, 32.8, 32.2, 38.5, 44.5, 44.6, 40.9, 29.5, 41.3, 35.5
+
+    <br>
+
+    a\) ¿Existen datos atípicos? ¿Qué porcentaje representan?<br>
+
+    b\) En que rango de datos existe menos variación?<br>
+
+    c\) En que rango de datos existe más variación?<br>
+
+    d\) Cuál es la forma o distribución de los datos?<br>
+
+    e\) Qué porcentaje de datos son menores que el valor mínimo?<br>
+
+    f\) Qué porcentaje de datos son mayores que el cuartil 3?<br>
+
+    g\) Dado la forma de los datos, ¿cómo es la media con respecto a la mediana?<br>
+
+    <br>
+
+## -----------------------------------------------------------------------------------
+
+# Actividad 1.7. Comparar la variación de los datos a través de un gráfico y las medidas de dispersión.
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right"}
+<font style="font-size:14pt">
+
+**Duración:** Una sesión
+
+7
+:::
+
+<font style="font-size:18pt">
+
+**Objetivo:**
+
+<font style="font-size:16pt">
+
+<div class=text-justify>
+
+> *Comparar un conjunto de datos utilizando un gráfico con la finalidad de tener una idea de la posible distribución de los datos y su variabilidad.*
+>
+> **Conceptos:** boxplot, datos atípicos, variación, cuartil.
+
+<br>
+
+<font style="font-size:14pt">
+
+<div class=text-justify>
+
+1.  **Gráfica los datos que se presentan a continuación:**
+
+    Un experimento informal fue realizado por la secundaría McNair Academic de Jersey City, Nueva Jersey, para investigar el uso de computadoras portátiles como herramienta de aprendizaje en el estudio del álgebra. Un grupo de 20 estudiantes de primer año recibió computadoras para usar en la escuela y en casa, al mismo tiempo a otro grupo de 27 no se les dieron laptops; no obstante muchos de éstos podían usarlas en casa. Las calificaciones del examen final para los dos grupos se muestran a continuación:<br>
+
+|               |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
+|---------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| **Laptop**    | 98  | 88  | 100 | 68  | 90  | 84  | 57  | 81  | 84  | 57  | 97  | 100 | 78  | 47  | 94  | 93  | 84  | 83  | 93  | 83  |     |     |     |     |     |     |     |
+| **No Laptop** | 63  | 86  | 78  | 83  | 81  | 29  | 97  | 84  | 64  | 93  | 99  | 74  | 52  | 91  | 72  | 74  | 49  | 89  | 83  | 80  | 67  | 63  | 81  | 89  | 88  | 89  | 70  |
+
+<br>
+
+2.  **Responde lo siguiente:**
+
+    a\) Qué conjunto de datos tiene más variación? justifica tu respuesta.<br>
+
+    b\) Si observas la medida de tendencia central que se muestra en las graficas, ¿qué puedes decir, son iguales, diferentes? justfica tu respuesta.<br>
+
+    c\) En qué intervalo hay menor variabilidad?<br><br>
+
+3.  ***Asignación 1.6.***
+
+    Investigar lo siguiente:
+
+    -   Características del diagrama de tallo y hojas.
+
+    -   Pasos para su construcción.
+
+    -   Ventajas y desventajas.
+
+    -   Realizar un ejemplo resuelto a mano.
+
+    -   [**Formato de entrega.**](https://docs.google.com/document/d/1VFq2wuw8OWOP01mNGJufMQr0Wgcdn4AP/edit?usp=sharing&ouid=118265252925699634054&rtpof=true&sd=true)
+
+## -----------------------------------------------------------------------------------
+
+# Actividad 1.8. Descripción de los datos utilizando un gráfico.
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right"}
+<font style="font-size:14pt">
+
+**Duración:** Una sesión
+
+8
+:::
+
+<font style="font-size:18pt">
+
+**Objetivo:**
+
+<font style="font-size:16pt">
+
+<div class=text-justify>
+
+> *Describir un conjunto de datos utilizando un gráfico con la finalidad de tener una idea de su posible distribución además de obtener cierta información.*
+
+**Conceptos:** diagrama de tallo y hojas, media, mediana.
+
+<br>
+
+<font style="font-size:14pt">
+
+<div class=text-justify>
+
+1.  **Revisar la Asignación 1.7**.<br>
+
+    a\) Describir el diagrama de tallo y hojas.
+
+    b\) Debatir de manera grupal sobre las descripciones de los estudiantes.
+
+<br>
+
+2.  **Construir un diagrama de tallo y hojas utilizando software con los siguientes datos:**<br>
+
+    Las propiedades mecánicas permisibles para el diseño estructural de vehículos aeroespaciales metálicos requieren un método aprobado para analizar estadísticamente los datos de prueba empíricos. El artículo "Establishing Mechanical Property allowables for metals" (J. of Testing and evaluatiion, 1998: 293-299) utilizó los datos anexos sobre resitencia a la tensión última ( Kg/pulg\^2) como base para abordar las dificultades que se presentan en el desarrollo de dicho método. <br>
+
+    122.2, 124.2, 124.3, 125.6, 126.3, 126.5, 126.5, 127.2, 127.3, 127.5, 127.9, 128.6, 128.8, 129.0, 129.2, 129.4, 129.6, 130.2, 130.4, 130.8, 131.3, 131.4, 131.4, 131.5, 131.6, 131.6, 131.8, 131.8, 132.3, 132.4, 132.4, 132.5, 132.5, 132.5, 132.5, 132.6, 132.7, 132.9, 133.0, 133.1, 133.1, 133.1, 133.1, 133.2, 133.2, 133.2, 133.3, 133.3, 133.5, 133.5, 133.5, 133.8, 133.9, 134.0, 134.0, 134.0, 134.0, 134.1, 134.2, 134.3, 134.4, 134.4, 134.6, 134.7, 134.7, 134.7, 134.8, 134.8, 134.8, 134.9, 134.9, 135.2, 135.2, 135.2, 135.3, 135.3, 135.4, 135.5, 135.5, 135.6, 135.6, 135.7, 135.8, 135.8, 135.8, 135.8, 135.8, 135.9, 135.9, 135.9, 135.9, 136.0, 136.0, 136.1, 136.2, 136.2, 136.3, 136.4, 136.4, 136.6, 136.8, 136.9, 136.9, 137.0, 137.1, 137.2, 137.6, 137.6, 137.8, 137.8, 137.8, 137.9, 137.9, 138.2, 138.2, 138.3, 138.3, 138.4, 138.4, 138.4, 138.5, 138.5, 138.6, 138.7, 138.7, 139.0, 139.1, 139.5, 139.6, 139.8, 139.8, 140.0, 140.0, 140.7, 140.7, 140.9, 140.9, 141.2, 141.4, 141.5, 141.6, 142.9, 143.4, 143.5, 143.6, 143.8, 143.8, 143.9, 144.1, 144.5, 144.5, 147.7, 147.7
+
+    <br>
+
+    a\) Cuál es el valor de resistencia a la tensión de los datos anteriores?<br>
+
+    b\) Qué porcentaje de observaciones de tensión son mayores o iguales a 135.6 Kg/pulg\^2?<br>
+
+    c\) Cómo es la distribución de los datos?<br>
+
+    d\) Dado la forma de los datos, ¿cómo es la media con respecto a la mediana?<br>
+
+    e\) Qué porcentaje de observaciones de tensión está, entre 132.4 Kg/pulg\\\^2 y 138.6 Kg/pulg\^2?<br>
+
+    f\) Cuál es valor que es mayor o igual al 35% de las observaciones?<br>
+
+    g\) Cuál es el valor que es menor que el 10% de las observaciones?<br><br>
+
+3.  ***Asignación 1.7***
+
+    Investigar lo siguiente:
+
+    -   ¿Cómo se calcula la media, la mediana y la moda para datos agrupados?
+
+    -   ¿Cómo se calcula la desviación estándar y la varianza para datos agrupados?
+
+    -   Realizar un ejemplo de cada medida.
+
+    -   [**Formato de entrega.**](https://docs.google.com/document/d/1vJ3vz5RYuqDq_9a-QgOTQe6Yz2di3Pil/edit?usp=sharing&ouid=118265252925699634054&rtpof=true&sd=true)
+
+## -----------------------------------------------------------------------------------
+
+# Actividad 1.9. Estimación de medidas para datos agrupados.
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right"}
+<font style="font-size:14pt">
+
+**Duración:** Una sesión
+
+9
+:::
+
+<font style="font-size:18pt">
+
+**Objetivo:**
+
+<font style="font-size:16pt">
+
+<div class=text-justify>
+
+> *Estimar las medidas de tendencia central y medidas de dispersión para datos agrupados mediante una tabla de distribución de frecuencias con la intención de describirla.*
+>
+> **Conceptos:** tabla de distribución de frecuencias, medidas de tendencia central para datos agrupados, medidas de variación para datos agrupados.
+
+<br>
+
+<font style="font-size:14pt">
+
+<div class=text-justify>
+
+1.  **La siguiente tabla se realizo con** $n= 153$ **observaciones del esfuerzo a la tensión.**
+
+<center>
+
+| Intervalos | LI  | LS  | fa  |  fr  |
+|:-----------|:---:|:---:|:---:|:----:|
+| 1          | 120 | 125 |  3  | 0.02 |
+| 2          | 125 |     | 14  | 0.09 |
+| 3          | 130 | 135 |     | 0.35 |
+| 4          |     | 140 | 62  | 0.41 |
+| 5          | 140 | 145 | 18  |      |
+| 6          | 145 |     |  2  | 0.01 |
+
+</center>
+
+<br>
+
+a\) Completar la tabla anterior.
+
+b\) Calcular la media, mediana y moda para datos agrupados.
+
+c\) Calcular la desviación estándar y la varianza para datos agrupados.
+
+d\) Describir la tabla de datos.
+
+e\) Qué porcentaje de observaciones son mayores que 135?
+
+f\) Cuál es el valor mínimo? Cuál es el valor máximo?
+
+g\) Qué tanto crees que se acercan las medidas antes calculadas a las medidas reales, en el caso de tener los datos? justifica la respuesta.
+
+## -----------------------------------------------------------------------------------
+
+# Actividad 1.10. Taller Estadística Descriptiva
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right"}
+<font style="font-size:14pt">
+
+**Duración:** Una sesión
+
+10
+:::
+
+<font style="font-size:18pt">
+
+**Objetivo:**
+
+<font style="font-size:16pt">
+
+<div class=text-justify>
+
+> *Realizar una prueba piloto a los estudiantes de la clase con el objetivo de obtener información que nos permita plantear una hipótesis para el taller de Estadística Descriptiva.*
+>
+> *Presentar el instrumento que se utilizará para recabar información mediante un formulario de google para puntualizar algunas consideraciones importantes.*
+>
+> **Conceptos:** prueba piloto, hipótesis, instrumento, muestreo.
+
+<br>
+
+<font style="font-size:14pt">
+
+<div class=text-justify>
+
+1.  **Taller Estadística Descriptiva.**
+
+    > **Objetivo:** Conocer el tiempo que pasan en redes sociales los estudiantes ITSON a través de una encuesta que permita tener una idea respecto al tiempo y preferencias de los estudiantes.
+
+    a\) Presentar el instrumento que se utilizará.
+
+    b\) Puntualizar algunas consideraciones importantes al elaborar un instrumento para recabar información.
+
+    c\) Realizar una *prueba piloto* en el salón de clase que permita plantear una [hipótesis]{.ul} de acuerdo al objetivo del taller.
+
+    d\) Encuestar 10 alumnos por estudiante de la clase.
+
+    -   Discutir algunos puntos importantes para recabar la información.
+
+## -----------------------------------------------------------------------------------
+
+# Actividad 1.11. Taller 1
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right"}
+<font style="font-size:14pt">
+
+**Duración:** Una sesión
+
+11
+:::
+
+<font style="font-size:18pt">
+
+**Objetivo:**
+
+<font style="font-size:16pt">
+
+<div class=text-justify>
+
+> *Realizar un repaso de los temas vistos en Estadística Descriptiva utilizando software para que los alumnos identifiquen el método adecuado a utilizar en cada caso.*
+>
+> **Conceptos:** estadístico, parámetro, muestra, población, métodos numéricos, métodos gráficos.
+
+<br>
+
+<font style="font-size:14pt">
+
+<div class=text-justify>
+
+1.  **Resolver Taller 1 utilizando software.**<br>
+
+2.  ***Asignación 1.8***
+
+    -   Entregar taller resuelto.
+    -   Subir portada en formato "pdf" y en la sección de comentarios dejar el enlace de la notebook.

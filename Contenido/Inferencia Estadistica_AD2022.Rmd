@@ -1,0 +1,831 @@
+---
+title: "Inferencia Estadística"
+author: "Mayra Demoss, Felipe Castro"
+date: "`r Sys.Date()`"
+output:
+  html_notebook:
+    toc: yes
+    toc_float: yes
+    highlight: zenburn
+    theme: cerulean
+  pdf_document:
+    toc: yes
+  html_document:
+    toc: yes
+    toc_float: yes
+    highlight: zenburn    
+    theme: cerulean
+    df_print: paged
+  word_document:
+    toc: yes
+---
+
+::: {style="text-align: right"}
+<font style="font-size:14pt">
+
+**Material de apoyo**
+:::
+
+## -----------------------------------------------------------------------------------
+
+# Actividad 3.1. Inferencia Estadística
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right"}
+<font style="font-size:14pt">
+
+**Duración:** una sesión
+
+30
+:::
+
+<font style="font-size:18pt">
+
+**Objetivo:**
+
+<font style="font-size:16pt">
+
+<div class=text-justify>
+
+> **Conceptos:**
+
+<br>
+
+<font style="font-size:14pt">
+
+1.  **Revisar de manera grupal la *Asignación 3.1.*** <br><br>
+
+2.  **Describir detalladamente el procedimiento para responder la siguiente pregunta: ¿Cuál es la estatura de los estudiantes ITSON?**
+
+    Discutir sobre los siguientes puntos:
+
+    -   Población y resultados obtenidos.
+
+    -   Muestra, representatividad y significancia de esta.
+
+    -   Homogeneidad de la muestra y variación entre los posibles resultados.
+
+    -   Inferencia estadística.
+
+        <br>
+
+3.  **Utilizar software para realizar estimaciones seleccionando diferentes tamaños de muestra.**
+
+    <br>
+
+4.  ***Asignación 3.1.***
+
+    Realiza la siguiente investigación:
+
+    -   ¿Qué es la Inferencia Estadística?.
+
+    -   Realiza una lista de las técnicas utilizadas en Inferencia.
+
+    -   ¿Cuáles son sus áreas de aplicación?
+
+    -   [Formato de entrega.](https://docs.google.com/document/d/1m2vgGmaocGGdHthJwTg2u6hupw7lp7_9/edit?usp=share_link&ouid=118265252925699634054&rtpof=true&sd=true)
+
+        <br>
+
+5.  ***Asignación 3.2.***
+
+    Realizar la siguiente investigación:
+
+    -   ¿Cuáles son las técnicas de muestreo?
+
+    -   ¿Cómo se calcula el tamaño de muestra (fórmulas)?
+
+    -   [**Formato de entrega.**](https://docs.google.com/document/d/1kyic8KBMIbrN-j1TUy4hvk1LZDHp2jHl/edit?usp=share_link&ouid=118265252925699634054&rtpof=true&sd=true)
+
+## -----------------------------------------------------------------------------------
+
+# Actividad 3.2. Técnicas de muestreo
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right"}
+<font style="font-size:14pt">
+
+**Duración:** una sesión
+
+31
+:::
+
+<font style="font-size:18pt">
+
+**Objetivo:**
+
+<font style="font-size:16pt">
+
+<div class=text-justify>
+
+> **Conceptos:**
+
+<br>
+
+<font style="font-size:14pt">
+
+1.  ***Revisar la asignación 3.2.***
+
+    -   utilizar software para simular un ejemplo de selección de tamaño de muestra para cada uno de los tipos de muestreo (simple, sistemático y estratificado).
+
+    -   Discutir sobre el proceso de selección de individuos y equiprobabilidad.
+
+        <br>
+
+2.  **Utilizar software para mostrar como se estabiliza la probabilidad cuando** $n$ **va creciendo.**
+
+    <br>
+
+3.  **Analizar los factores que intervienen en el tamaño de muestra.**
+
+    -   Ejemplo: $n = \frac{(Z_{\alpha2})^{2}\sigma^{2}}{e^2}$
+
+        <br>
+
+4.  **Utilizar software para resolver el siguiente ejercicio:**
+
+    Calcular el tamaño de la muestra necesario para estimar la estatura promedio de los estudiantes de Itson, generando un muestra piloto de 30 obseraciones, un nivel de confianza del 95% y error del 5%.
+
+## -----------------------------------------------------------------------------------
+
+# Actividad 3.3. Estimación del tamaño de muestra
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right"}
+<font style="font-size:14pt">
+
+**Duración:** una sesión
+
+32
+:::
+
+<font style="font-size:18pt">
+
+**Objetivo:**
+
+<font style="font-size:16pt">
+
+<div class=text-justify>
+
+> **Conceptos:**
+
+<br>
+
+<font style="font-size:14pt">
+
+1.  **Realizar el procedimiento necesario para responder la siguiente pregunta: ¿Cuál es la proporción de estudiantes (hombres) en ITSON?**
+
+    $$ n = \frac{(Z_{\alpha2})^{2}\hat{p}(1-\hat{p})}{e^ {2}}$$
+
+<br>
+
+2.  **Utilizar software para simular el tamaño de muestra para los diferentes valores que puede tomar la proporción.**
+
+    <br><br>
+
+3.  **Utilizar software para realizar una prueba piloto y estimar la proporción de "Hombres".**
+
+    <br><br>
+
+4.  **Estimar el tamaño de muestra para los siguientes ejercicios.**
+
+    -   Un fabricante de bombillas sabe que la desviación típica de la duración de las bombillas es 100 horas. Calcula el tamaño de la muestra que se ha de someter a prueba para tener una confianza del 95% de que el error de la duración media que se calcula sea menor a 10 horas. (n= 385 bombillas)
+
+    -   Para estimar la proporción de habitantes de una ciudad que poseen ordenador personal se toma una muestra de tamaño $n$. Calcula el valor mínimo de $n$ para garantizar, con un nivel de confianza del 95%, que el error de estimación no supera el 2%. (Como se desconoce la proporción, se hará partir del caso más desfavorable, que será 0,5). (n= 2401 habitantes)
+
+        <br>
+
+5.  ***Asignación 3.3***
+
+    Resuelve los siguientes ejercicios:
+
+    -   Se desea realizar una encuesta entre la población juvenil de una determinada localidad para determinar la proporción de jóvenes que estaría a favor de una nueva zona de ocio. El número de jóvenes de dicha población es N=2000. Determinar el tamaño de muestra necesario para estimar la proporción de estudiantes que están a favor con un error de estimación de 0.05 y un nivel de confianza del 95%. (n= 323 jóvenes)
+
+    -   Queremos ajustar una máquina de refrescos de modo que el promedio del líquido dispensado quede dentro de cierto rango. La cantidad de liquido vertido por la máquina sigue una distribución normal con desviación estándar 0.15 decilitros. Deseamos que el valor estimado que se vaya a obtener comparado con el verdadero no sea superior a 0.02 decilitros con una confianza del 95%.¿De qué tamaño debemos escoger la muestra? (n= 217 refrescos) <br>
+
+6.  ***Asignación 3.4***
+
+    -   ¿Qué es una estimación puntual?
+
+    -   Tipos de estimadores puntuales.
+
+    -   ¿Qué es una estimación por intervalos?
+
+    -   Tipos de estimadores por intervalos.
+
+## -----------------------------------------------------------------------------------
+
+# Actividad 3.4. Intervalos de confianza
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right"}
+<font style="font-size:14pt">
+
+**Duración:** una sesión
+
+33
+:::
+
+<font style="font-size:18pt">
+
+**Objetivo:**
+
+<font style="font-size:16pt">
+
+<div class=text-justify>
+
+> **Conceptos:**
+
+<br>
+
+<font style="font-size:14pt">
+
+1.  **Revisión de la Asignación *3.4.***
+
+    <br>
+
+2.  **Factores que interviene en la estimación de un Intervalo de Confianza.**
+
+    <br>
+
+3.  **Utilizar software para realizar las siguientes estimaciones:**
+
+    Considerar los datos que se encuentran en el archivo "Tiempo en Redes".
+
+    -   Estimación puntual para la proporción.
+
+    -   Estimación puntual para media.
+
+    -   Estimación por intervalos para la media.
+
+    -   Estimación por intervalos para la proporción.
+
+        <br>
+
+4.  ***Asignación 3.5.***
+
+    Resolver los siguientes ejercicios:
+
+    1.  Las plataformas marinas de extracción de petróleo se encuentran mar adentro. Se tiene interés en conocer la densidad de tráfico de barcos en un área circundante a una plataforma. El número de barcos que pasan a 15 kilómetros de la plataforma por día, registrado durante 60 días en los meses de abril y mayo, tienen una media y una varianza muestrales diarias iguales a $\bar{x}= 7 . 2 \hspace{0.1cm} y \hspace{0.1cm}s^2 = 8 . 8$ , respectivamente. (a) Encuentre un intervalo de confianza de 95% del número de barcos que pasan dentro del área de 15 kilómetros que circundan la plataforma en un periodo de un día concluya los resultados. (6.45, 7.95). <br>
+
+    2.  Para estudiar el uso de celulares mientras se maneja, se llevó a cabo una encuesta entre conductores que los usan mientras manejan. En la encuesta, 46% de quienes respondieron reportaron haber tenido que "virar bruscamente" como resultado de su distracción, y 10% había tenido un accidente mientras hablaba por celular. Suponga que la encuesta se basó en 500 personas que respondieron.
+
+        \(a\) Construya un intervalo con 95% de confianza para proporción poblacional de los con- ductores que han virado bruscamente y concluya los resultados. (0.4163, 0.5037)
+
+        \(b\) Construya un intervalo con 95% de confianza para proporción poblacional de los con- ductores que se accidentaron mientras hablaban por celular y concluya los resultados. (0.0737, 0.1263)
+
+## -----------------------------------------------------------------------------------
+
+# Actividad 3.4. Intervalos de confianza
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right"}
+<font style="font-size:14pt">
+
+**Duración:** una sesión
+
+34
+:::
+
+<font style="font-size:18pt">
+
+**Objetivo:**
+
+<font style="font-size:16pt">
+
+<div class=text-justify>
+
+> **Conceptos:**
+
+<br>
+
+<font style="font-size:14pt">
+
+1.  **Comparar la edad de los hombres y mujeres a través de los Intervalos de Confianza.**
+
+    -   Considerar la base de datos "Tiempo en Redes".
+
+    -   Realizar la estimación por intervalos para la edad de Hombres y Mujeres y comparar los resultados.
+
+    -   Discutir de manera grupal los resultados obtenidos y concluir.
+
+    -   Realizar la estimación por intervalos para la diferencia de edad entre Hombres y Mujeres.
+
+    -   Discutir de manera grupal los resultados obtenidos y concluir.
+
+        <br>
+
+2.  ***Asignación 3.6.***
+
+    1.  El primer día de béisbol es a fines de marzo para concluir en octubre con la serie mundial. ¿El apoyo de los aficionados aumenta a medida que avanza la temporada?. Dos encuestas de la CNN/USA Today/Gallup, una de ellas realizada en marzo y la otra en noviembre, contenían muestras aleatorias de 1001 adultos de 18 años de edad o más. En la muestra de marzo 45% de los adultos dijeron ser aficionados del béisbol profesional, en tanto que 51% de los adultos de la muestra de noviembre dijo que eran aficionados.
+
+        a\) Use un intervalo de confianza de 99% para estimar la diferencia en la proporción de adultos que dicen aficionados en marzo contra noviembre. (-0.060 ± 0.057 o (-0.117, -0.003)
+
+        <br>
+
+    2.  Una muestra de 150 lámparas del tipo A ha dado una vida media de 1400 hrs y una desviación estándar de 120 hrs. Una muestra de 200 lámparas del tipo B dan vida media de 1200 hrs 4 Probabilidad y Estadística Muestreo, Intervalos de Confianza Ejercicios Unidad III y una desviación estándar de 80hrs.
+
+        a\) Hallar los límites del intervalos de confianza al 98% para la diferencia de las vidas medias de las poblaciones de ambos tipos, y concluir acerca del resultado. (176.993, 223.007).
+
+## -----------------------------------------------------------------------------------
+
+# Actividad 3.5. Intervalos de confianza para diferencia de proporciones.
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right"}
+<font style="font-size:14pt">
+
+**Duración:** una sesión
+
+35
+:::
+
+<font style="font-size:18pt">
+
+**Objetivo:**
+
+<font style="font-size:16pt">
+
+<div class=text-justify>
+
+> **Conceptos:**
+
+<br>
+
+<font style="font-size:14pt">
+
+1.  **Revisión de la *Asignación 3.7.***
+
+    <br>
+
+2.  **Resolver los siguientes ejercicios:**
+
+    -   Una muestra de 200 tuercas de una cierta máquina probó que eran 15 defectuosas, mientras que una muestra de 100 tuercas de otra máquina dio 12 defectuosas. Hallar los límites de confianza al 95% para la diferencia de proporciones de tuercas defectuosas de las dos máquinas, concluir los resultados obtenidos. (-0.1184, 0.0284)
+
+        <br>
+
+    -   Dos marcas de refrigeradores, denotados por A y B, están garantizados por 1 año. En una muestra aleatoria de 50 refrigeradores de la marca A, se observó que 12 de ellos fallaron antes de terminar el periodo de garantía. Una muestra aleatoria independiente de 60 refrigeradores de la marca B también revelo 12 fallas durante el periodo de garantía.
+
+        a). Hallar los límites del intervalos de confianza al 98% para la diferencia de las proporciones de fallas durante el periodo de garantía, y concluir acerca del resultado. (-0.1449, 0.2249).
+
+        <br>
+
+    -   Una muestra de 300 residentes adultos urbanos de un estado particular reveló que 63 estaban a favor de incrementar el límite de velocidad en las autopistas de 55 a 65 mph, en tanto que una muestra de 180 residentes rurales arrojó que 75 estaban a favor del incremento.
+
+        a\) Hallar los límites de confianza al 98% para la diferencia de proporciones de las personas adultas a favor de incrementar el límite de velocidad, concluir los resultados obtenidos. (- 0.3082, -0.1052)
+
+3.  ***Asignación 3.7.***
+
+    Realizar taller (ICMG)
+
+## -----------------------------------------------------------------------------------
+
+# Actividad 3.6. Taller Intervalos de Confianza para muestra grande.
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right"}
+<font style="font-size:14pt">
+
+**Duración:** una sesión
+
+35
+:::
+
+<font style="font-size:18pt">
+
+**Objetivo:**
+
+<font style="font-size:16pt">
+
+<div class=text-justify>
+
+> **Conceptos:**
+
+<br>
+
+<font style="font-size:14pt">
+
+1.  La Asociación Internacional de Transporte Aéreo realiza encuestas entre agentes viajeros para establecer la calidad de los principales aeropuertos internacionales. El rango de calificaciones va de 1 -10. Suponer que se toma una muestra aleatoria de 50 agentes viajeros y que las calificaciones otorgadas a uno de los aeropuertos de la República Mexicana fueron:
+
+    <br>
+
+    `4, 7, 4, 7, 4, 3, 7, 8, 8, 8, 8, 8, 8, 4, 8, 4, 3, 9, 9, 5, 7, 8, 6, 7, 9, 4, 3, 8, 8, 8, 9, 8, 9, 3, 4, 8, 6, 7, 6, 6, 5, 5, 3, 7, 4, 4, 6, 7, 3, 4,`
+
+    <br>
+
+2.  Las plataformas marinas de extracción de petróleo se encuentran mar adentro. Se tiene interés en conocer la densidad de trafico de barcos en un área circundante a una plataforma. El número de barcos que pasan a los 15 km dela plataforma por día, registrado durante 60 días en los meses de abril y mayo, tienen una media y varianza muestrales diarias iguales a $\bar{x}= 7.2\hspace{0.3cm}y\hspace{0.3cm}S^2=8.8$ respectivamente.
+
+```{=html}
+<!-- -->
+```
+    <br>
+
+3.  Para estudiar el uso de celulares mientras se maneja, se llevó acabo una encuesta entre conductores que los usan mientras manejan. En la encuesta, 46% de quienes respondieron reportaron haber tenido que "virar bruscamente" como resultado de su distracción, y 10% había tenido un accidente mientras hablaba por celular. Suponga que la encuesta se basó en 500 personas que respondieron.
+
+    a\) Construir un intervalo con 95% de confianza para la proporción poblacional de los conductores que han virado bruscamente.
+
+    b\) Construya un intervalo con 95% de confianza para la proporción poblacional de los conductores que se accidentaron mientras hablaban por celular.
+
+    <br>
+
+4.  En Puerto Rico, se encontró que 7 de 61 infantes hospitalizados con salmonelosis, habían probablemente, adquirido la infección de sus mascotas (tortugas). Estimar un intervalo de confianza al 99%.
+
+## -----------------------------------------------------------------------------------
+
+# Actividad 3.7. Intervalos de Confianza para la media muestra pequeña.
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right"}
+<font style="font-size:14pt">
+
+**Duración:** una sesión
+
+35
+:::
+
+<font style="font-size:18pt">
+
+**Objetivo:**
+
+<font style="font-size:16pt">
+
+<div class=text-justify>
+
+> **Conceptos:**
+
+<br>
+
+<font style="font-size:14pt">
+
+1.  **Revisión de la *Asignación 3.7.*** <br>
+
+<!-- -->
+
+1.  **Utilizar software para mostrar el efecto del tamaño de muestra respecto a la población.**
+
+    -   Teorema del límite central. <br>
+
+2.  **Estimar los intervalos de confianza para la media muestra pequeña.**
+
+    -   En un punto de control instalado en una avenida principal en una determinada ciudad, se midió la velocidad a la cual transitaban algunos automovilistas y la distancia recorrida. Estimar un intervalo al 95% de confianza para cada una de las variables.
+
+        `Velocidad (millas/hr):10, 19, 20, 11, 13, 10, 18, 24, 14, 13`
+
+        `Distancia (millas):34, 85, 54, 60, 20, 34, 22, 10, 80, 36`
+
+        <br>
+
+    -   
+
+    -   
+
+    <br>
+
+3.  ***Asignación 3.8.***
+
+    Investigar el estimador utilizado para:
+
+    -   Diferencia de medias muestra grande.
+
+    -   Diferencia de medias muestra pequeña.
+
+    -   Diferencia de proporciones.
+
+## -----------------------------------------------------------------------------------
+
+# Actividad 3.8. Intervalos de Confianza para diferencias.
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right"}
+<font style="font-size:14pt">
+
+**Duración:** una sesión
+
+36
+:::
+
+<font style="font-size:18pt">
+
+**Objetivo:**
+
+<font style="font-size:16pt">
+
+<div class=text-justify>
+
+> **Conceptos:**
+
+<br>
+
+<font style="font-size:14pt">
+
+1.  Revisión de la asignación 3.8
+
+2.  ***Asignación 3.8.***
+
+    -   Realizar el taller (ICMP).
+
+## -----------------------------------------------------------------------------------
+
+# Actividad 3.9. Prueba de Hipótesis.
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right"}
+<font style="font-size:14pt">
+
+**Duración:** una sesión
+
+37
+:::
+
+<font style="font-size:18pt">
+
+**Objetivo:**
+
+<font style="font-size:16pt">
+
+<div class=text-justify>
+
+> **Conceptos:**
+
+<br>
+
+<font style="font-size:14pt">
+
+1.  **Revisión de la *Asignación 3.8.***
+
+    <br>
+
+2.  **Utilizando la base de datos "Tiempo en Redes", responde lo siguiente:**
+
+    -   ¿El tiempo que pasan los estudiantes ITSON en redes sociales es mayor a 5 hrs.?
+
+    -   ¿La proporción de estudiantes ITSON que utiliza instagram es menor al 45%?
+
+        <br>
+
+3.  ***Asignación 3.9.***
+
+    -   ¿En qué consiste la Prueba de Hipótesis?
+
+    -   Pasos para realizar una Prueba de Hipótesis.
+
+## -----------------------------------------------------------------------------------
+
+# Actividad 3.10. Prueba de Hipótesis.
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right"}
+<font style="font-size:14pt">
+
+**Duración:** una sesión
+
+38
+:::
+
+<font style="font-size:18pt">
+
+**Objetivo:**
+
+<font style="font-size:16pt">
+
+<div class=text-justify>
+
+> **Conceptos:**
+
+<br>
+
+<font style="font-size:14pt">
+
+1.  **Revisar *Asignación 3.10.***
+
+    <br>
+
+2.  **A partir de las preguntas de investigación establecer las hipótesis estadísticas.**
+
+    <br>
+
+3.  **Responder el instrumento "Planteamiento de Hipótesis".**
+
+    <br>
+
+4.  ***Asignación 3.10.***
+
+    Plantear las hipótesis estadísticas para los siguientes ejercicios:
+
+## -----------------------------------------------------------------------------------
+
+# Actividad 3.11. Prueba de Hipótesis para la media de una población.
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right"}
+<font style="font-size:14pt">
+
+**Duración:** una sesión
+
+39
+:::
+
+<font style="font-size:18pt">
+
+**Objetivo:**
+
+<font style="font-size:16pt">
+
+<div class=text-justify>
+
+> **Conceptos:**
+
+<br>
+
+<font style="font-size:14pt">
+
+1.***Revisar la*** **Asignación 3.10.**
+
+<br>
+
+2.**Resolver los ejercicios de la *Asignación 3.10* utilizando los estimadores correspondientes.**
+
+<br>
+
+3.**Utilizar software para resolver los siguientes ejercicios.**
+
+<br>
+
+4.***Asignación 3.11.***
+
+Resolver los siguientes ejercicios.
+
+## -----------------------------------------------------------------------------------
+
+# Actividad 3.12. Prueba de Hipótesis para diferencia de medias.
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right"}
+<font style="font-size:14pt">
+
+**Duración:** una sesión
+
+40
+:::
+
+<font style="font-size:18pt">
+
+**Objetivo:**
+
+<font style="font-size:16pt">
+
+<div class=text-justify>
+
+> **Conceptos:**
+
+<br>
+
+<font style="font-size:14pt">
+
+1.**Revisión de la *Asignación 3.11.***
+
+<br>
+
+2.**Resolver los siguientes ejercicios utilizando el estadístico de prueba correspondiente.**
+
+<br>
+
+3.**Utilizar software para resolver los siguientes ejercicios.**
+
+<br>
+
+4.***Asignación 3.12.***
+
+Resolver el taller (PHM,PHDM).
+
+## -----------------------------------------------------------------------------------
+
+# Actividad 3.13. Taller Prueba de Hipótesis para la media y diferencia de medias.
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right"}
+<font style="font-size:14pt">
+
+**Duración:** una sesión
+
+41
+:::
+
+<font style="font-size:18pt">
+
+**Objetivo:**
+
+<font style="font-size:16pt">
+
+<div class=text-justify>
+
+> **Conceptos:**
+
+<br>
+
+<font style="font-size:14pt">
+
+1.  **Resolver los siguientes ejercicios.**
+
+    <br>
+
+2.  ***Asignación 3.13.***
+
+    -   Investigar los estadísticos de prueba para la proporción y diferencia de proporciones.
+
+## -----------------------------------------------------------------------------------
+
+# Actividad 3.14. Prueba de hipótesis para la proporción.
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right"}
+<font style="font-size:14pt">
+
+**Duración:** una sesión
+
+43
+:::
+
+<font style="font-size:18pt">
+
+**Objetivo:**
+
+<font style="font-size:16pt">
+
+<div class=text-justify>
+
+> **Conceptos:**
+
+<br>
+
+<font style="font-size:14pt">
+
+1.  **Revisar *Asignación 3.13.***
+
+    <br>
+
+2.  **Resolver los siguientes ejercicios utilizando el estadístico de prueba correspondiente.**
+
+    <br>
+
+3.  **Utilizar software para resolver los siguientes ejercicios.**
+
+    <br>
+
+4.  ***Asignación 3.14.***
+
+    -   Resolver Taller (PHP,PHDP).
+    -   Investigar los tipos de errores que se pueden cometer cuando se realiza una prueba de hipótesis.
+
+## -----------------------------------------------------------------------------------
+
+# Actividad 3.15. Error tipo I y error tipo II
+
+------------------------------------------------------------------------
+
+::: {style="text-align: right"}
+<font style="font-size:14pt">
+
+**Duración:** una sesión
+
+44
+:::
+
+<font style="font-size:18pt">
+
+**Objetivo:**
+
+<font style="font-size:16pt">
+
+<div class=text-justify>
+
+> **Conceptos:**
+
+<br>
+
+<font style="font-size:14pt">
+
+1.  **Revisar *Asignación 3.14.***
+
+    <br>
+
+2.  **Establecer los tipos de errores para los siguientes ejercicios, analizar los efectos posibles de cada uno y concluir.**
+
+    <br>
+
+3.  **Resolver el instrumento "Error Tipo I y Tipo II".**
