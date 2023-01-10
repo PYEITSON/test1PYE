@@ -28,6 +28,7 @@
 /*** Spinner ***/
 #spinner {
     opacity: 0;
+    visibility: visible;
     transition: opacity .5s ease-out, visibility 0s linear .5s;
     z-index: 99999;
 }
@@ -427,3 +428,6 @@
 .testimonial-carousel .owl-dot.active::after {
     background: var(--primary);
 }
+
+
+
